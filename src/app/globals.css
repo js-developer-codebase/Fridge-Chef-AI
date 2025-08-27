@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 56% 90%; /* #F4E1D2 */
+    --foreground: 22 33% 20%; /* Darker brown */
+    --card: 30 56% 90%;
+    --card-foreground: 22 33% 20%;
+    --popover: 30 56% 90%;
+    --popover-foreground: 22 33% 20%;
+    --primary: 22 33% 38%; /* #6E493A */
+    --primary-foreground: 30 56% 95%;
+    --secondary: 22 33% 48%;
+    --secondary-foreground: 30 56% 95%;
+    --muted: 30 56% 85%;
+    --muted-foreground: 22 33% 30%;
+    --accent: 22 33% 38%;
+    --accent-foreground: 22 33% 20%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 56% 80%;
+    --input: 30 56% 80%;
+    --ring: 22 33% 38%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 22 33% 20%; /* Darker brown */
+    --foreground: 30 56% 90%; /* #F4E1D2 */
+    --card: 22 33% 20%;
+    --card-foreground: 30 56% 90%;
+    --popover: 22 33% 20%;
+    --popover-foreground: 30 56% 90%;
+    --primary: 30 56% 90%;
+    --primary-foreground: 22 33% 15%;
+    --secondary: 30 56% 80%;
+    --secondary-foreground: 22 33% 15%;
+    --muted: 30 56% 80%;
+    --muted-foreground: 30 56% 90%;
+    --accent: 30 56% 80%;
+    --accent-foreground: 22 33% 15%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 22 33% 30%;
+    --input: 22 33% 30%;
+    --ring: 30 56% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
